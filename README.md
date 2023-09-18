@@ -44,7 +44,7 @@ This project requires [SweetAlert2](https://sweetalert2.github.io) and Bootstrap
 You have the flexibility to define routes according to your project's specific requirements. Below is an example of how to define a route. Please customize your routes as needed to align with your project's unique configuration and objectives.
 
 ```javascript
-Route::delete('/{user}/delete', [UserController::class, 'delete']);
+Route::delete('/{user}/delete', [UserController::class, 'delete'])->name('user.delete');
 ```
 
 #### Controller
