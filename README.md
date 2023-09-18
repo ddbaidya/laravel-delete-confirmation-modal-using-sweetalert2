@@ -23,3 +23,9 @@ This project requires SweetAlert2. Please refer to the [official documentation ]
 ```bash
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 ```
+
+## Flow Diagram
+
+<p align="center" width="100%">
+    <img width="80%" src="/images/flow.jpg">
+</p>
