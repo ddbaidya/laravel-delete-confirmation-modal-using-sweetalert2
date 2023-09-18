@@ -39,3 +39,13 @@ You have the flexibility to define routes according to your project's specific r
 ```javascript
 Route::delete('/{user}/delete', [UserController::class, 'delete']);
 ```
+
+#### Controller
+
+You can create custom controllers to manage the logic and functionality of your application. Here's an example of how to create a controller:
+
+```javascript
+php artisan make:controller UserController
+```
+
+Replace **UserController** with the desired name for your controller. This allows you to define and organize the controller methods that handle various aspects of your application's functionality as per your project's requirements.
