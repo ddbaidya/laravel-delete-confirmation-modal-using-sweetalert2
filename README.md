@@ -197,3 +197,53 @@ class DeleteConfirmationAlert extends Component
 ```
 
 Please take note that if you've altered the name of this component in previous steps, it is essential to ensure that the correct namespace, class name, and view file are being used.
+
+#### View
+
+To integrate the delete confirmation alert into your view file, you'll need to include the following code:
+
+**Delete Button**
+
+```html
+<button id="delete-button" class="btn btn-primary">Delete Me</button>
+```
+
+**Delete Modal Component**
+
+```html
+<x-delete-confirmation-alert buttonId="delete-button" deleteRoute="{{ route('user.delete', 1) }}" redirectRoute="{{ request()->url() }}" />
+```
+
+You have the flexibility to chose any name for the **id** attribute of button, and it should be consistent same in **buttonId** of x-component (In this case **delete-button**).
+
+### Here is a blade file example code to help you understand.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Delete Confirmation using SweetAlert2</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Delete Confirmation using SweetAlert2</h1>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <button id="delete-button" class="btn btn-primary" style="margin: 0 auto; width: 100px; display:block">Delete Me</button>
+          <x-delete-confirmation-alert buttonId="delete-button" deleteRoute="{{ route('user.delete', 1) }}" redirectRoute="{{ request()->url() }}" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+```
