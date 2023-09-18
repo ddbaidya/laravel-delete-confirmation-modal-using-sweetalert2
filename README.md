@@ -16,12 +16,19 @@ Enhance your web application's user interface by implementing a delete confirmat
 
 ## Dependencies
 
-This project requires SweetAlert2. Please refer to the [official documentation ](https://sweetalert2.github.io) for SweetAlert2 to install it and gain a better understanding of its functionality and usage.
+This project requires [SweetAlert2](https://sweetalert2.github.io) and Bootstrap[Bootstrap](https://getbootstrap.com/docs). Please refer to the official documentation for SweetAlert2 and Bootstrap to install it and gain a better understanding of its functionality and usage.
 
 #### SweetAlert2 CDN
 
-```bash
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+```html
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+```
+
+#### Bootstrap CDN
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 ```
 
 ## Flow Diagram
