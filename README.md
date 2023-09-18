@@ -29,3 +29,13 @@ This project requires SweetAlert2. Please refer to the [official documentation ]
 <p align="center" width="100%">
     <img width="80%" src="/images/flow.jpg">
 </p>
+
+## Usages
+
+#### Route
+
+You have the flexibility to define routes according to your project's specific requirements. Below is an example of how to define a route. Please customize your routes as needed to align with your project's unique configuration and objectives.
+
+```javascript
+Route::delete('/{user}/delete', [UserController::class, 'delete']);
+```
