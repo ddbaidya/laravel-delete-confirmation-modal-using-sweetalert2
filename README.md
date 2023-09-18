@@ -68,7 +68,7 @@ You have the flexibility to create custom delete methods, incorporating your own
      * @param User $user
      * @return \Illuminate\Http\Response
      */
-    public function delete(Subject $user)
+    public function delete(User $user)
     {
         if ($user->delete()) {
             // Delete Success
