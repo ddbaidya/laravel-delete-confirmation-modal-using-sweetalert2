@@ -49,3 +49,26 @@ php artisan make:controller UserController
 ```
 
 Replace **UserController** with the desired name for your controller. This allows you to define and organize the controller methods that handle various aspects of your application's functionality as per your project's requirements.
+
+#### Methods
+
+You have the flexibility to create custom delete methods, incorporating your own logic and events. However, it is essential to ensure that your delete function returns a JSON response, following a similar format as the example provided.
+
+```php
+    /**
+     * Delete User.
+     *
+     * @param User $user
+     * @return \Illuminate\Http\Response
+     */
+    public function delete(Subject $user)
+    {
+        if ($user->delete()) {
+            // Delete Success
+            return response()->json([], 200);
+        }
+        return response()->json([], 404);
+    }
+```
+
+Ensuring that this method is present within your controller (in this case, **UserController**) is essential.
