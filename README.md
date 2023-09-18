@@ -13,3 +13,13 @@ Enhance your web application's user interface by implementing a delete confirmat
 <p align="center" width="100%">
     <img width="80%" src="/images/screenshot-2.png">
 </p>
+
+## Dependencies
+
+This project requires SweetAlert2. Please refer to the [official documentation ](https://sweetalert2.github.io) for SweetAlert2 to install it and gain a better understanding of its functionality and usage.
+
+#### SweetAlert2 CDN
+
+```bash
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+```
